@@ -19,7 +19,7 @@ public class UKNetflixFilmSearch {
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("https://streaming-availability.p.rapidapi.com/search/basic?country=gb&service=netflix&type=movie&keyword=" + filmName + "&language=en"))
 				.header("x-rapidapi-host", "streaming-availability.p.rapidapi.com")
-				.header("x-rapidapi-key", "5be1ae3b1dmshffee9488265055fp1bbbfejsn217e08aeb271")
+				.header("x-rapidapi-key", "undefined")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
 		HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
